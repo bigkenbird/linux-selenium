@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.shoalter</groupId>
-    <artifactId>linux-selenium</artifactId>
+    <artifactId>linuxselenium</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>linux-selenium</name>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
