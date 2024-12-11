@@ -1,0 +1,6 @@
+cd linux-selenium/
+maven install #build jar
+docker build -t linux-selenium:v1.0 -f Dockerfile .
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" --name linux-selenium linux-selenium:v1.0
+docker exec -it linux-selenium /bin/bash
+java -cp /app/app.jar:/app/lib/* com.shoalter.Main
